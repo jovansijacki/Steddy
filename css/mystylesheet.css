@@ -2,6 +2,16 @@
 *{
   font-family: 'Poppins', sans-serif;
 }
+
+@media only screen and (max-width: 600px) {
+  .contentdiv1{display: block;}
+  /* .imgcontentdiv{display: none;} */
+}
+@media only screen and (min-width: 601px) {
+  .contentdiv1{display: flex;}
+  /* .imgcontentdiv{display: none;} */
+}
+
 .logo{
   width: 5em;
   height: 5.2em;
@@ -70,7 +80,6 @@ html{
   width: 80%;
   background: transparent;
   padding: 1em;
-  display: flex;
   align-items: stretch;
   justify-content: space-around;
 }
@@ -124,6 +133,8 @@ p{
   vertical-align: middle;
 }
 .teamp{
+  text-align: justify;
+  text-justify: inter-word;
   font-size: 0.2em;
   padding: 10px;
   margin: 0px;

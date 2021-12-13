@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 .logo{
@@ -10,28 +7,72 @@
   height: 5.2em;
 }
 html{
+  background-color: #f39f86;
+  background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+}
+.headerdiv img {
+  height: 100%;
+  width: 70px;
+}
+.maindiv{
+  position: absolute;
+  height: 100%;
   width: 100%;
-  background: burlywood;
 }
 .headerdiv{
-  display: flex;
-  margin: auto;
-  padding: 15px;
+  width: 100%;
 }
-.inner{
-  display: grid;
-  border: 15px;
-}
-.courseldiv{
-  min-height: 50vh;
-  display: flex;
-  align-items: center;
-}
-.contentdiv{
+.header{
+  left: calc((50vw - 50%) * -1); /* add negative value equal to half of the scrollbar width if any */
+  transform: translate(calc(50vw - 50%));
   width: 80%;
-  margin: auto;
-  background: bisque;
+  height: 100px;
   border-radius: 30px;
+  position: fixed;
+  display: flex;
+  background-color: #d9d9d9;
+  background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+}
+
+.textcontentdiv{
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 1em;
+  padding: 1em;
+  /* important */
+  min-height: 100%;
+  border-radius: 30px;
+  background-color: #d9d9d9;
+  background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+  box-shadow: 0px 30x 50px rgba(0, 0, 0, 0.2);
+}
+.spacer{
+  width: 100%;
+  height: 150px;
+}
+.imgcontentdiv{
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 1em;
+  padding: 1em;
+  min-height: 100%;
+  border-radius: 30px;
+  background-color: #d9d9d9;
+  background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+  box-shadow: 0px 30x 50px rgba(0, 0, 0, 0.2);
+}
+.imgcontentdiv img {
+  height: 100%;
+  width: 100%;
+}
+.contentdiv1{
+  margin: auto;
+  width: 80%;
+  background: transparent;
+  padding: 1em;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
 }
 
 .outer{
@@ -39,16 +80,24 @@ html{
 }
 
 p{
-  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 #header_wrap{
   width: 80%;
 }
 .wrapper{
-  width: 100%;
+  margin: auto;
+  width: 80%;
+}
+.courseldiv{  
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
 }
 .carousel{
-  max-width: 1200px;
+  max-width: 90%;
   margin: auto;
   padding: 0 30px;
 }
@@ -58,10 +107,11 @@ p{
   margin: 20px 0;
   line-height: 20px;
   font-size: 90px;
-  font-weight: 600;
-  border-radius: 10px;
+  font-weight: 500;
+  border-radius: 20px;
   box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
-  background:blanchedalmond
+  background-color: #d9d9d9;
+  background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
 }
 .owl-dots{
   text-align: center;
@@ -71,10 +121,11 @@ p{
 .cardheader{
   font-size: 0.3em;
   padding: 10px;
+  vertical-align: middle;
 }
 .teamp{
-  font-size: 0.15em;
-  padding: 5px;
+  font-size: 0.2em;
+  padding: 10px;
   margin: 0px;
 }
 .owl-dot{
@@ -84,11 +135,13 @@ p{
   margin-bottom: 20px;
   outline: none;
   border-radius: 14px;
-  border: 2px solid #fc7c14!important;
+  border: 2px solid #d8d3d0!important;
   box-shadow: 0px 10px 30px rgba(255, 94, 19, 0.39);
   transition: all 0.3s ease;
 }
 .owl-dot.active,
 .owl-dot:hover{
-  background: #ff9100!important;
+  background: linear-gradient(315deg, #e27250 0%, #d3ad3c 74%)!important;
 }
+
+

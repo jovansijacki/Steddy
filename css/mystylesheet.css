@@ -28,17 +28,43 @@
   .imgcontentdiv{margin: 0 1em;}
 }
 
-.logo{
-  width: 5em;
-  height: 5.2em;
-}
 html{
   background-color: #f39f86;
   background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
 }
 .headerdiv img {
   height: 100%;
-  width: 70px;
+  width: 170px;
+  background-color: #d9d9d9;
+  background-image: linear-gradient(315deg,#d9d9d9 0%,#f6f2f2 74%);
+  clip-path: circle();
+}
+
+.headertext{
+  background-color: #d9d9d9;
+  background-image: linear-gradient(315deg,#d9d9d9 0%,#f6f2f2 74%);
+  width: 100%;
+  display: inline-flex;
+  border-radius: 30px;
+  padding-left: 30px;
+}
+.headertext h1
+{
+  margin: 15px;
+}
+h3{
+  margin: auto;
+  align-content: center;
+}
+.contentdiv1{
+  align-content: center;
+}
+p{
+  justify-content: center;
+}
+.headertext h2{
+  padding-left: 50px;
+  padding-top: 10px;
 }
 .maindiv{
   height: 100%;
@@ -53,8 +79,8 @@ html{
   border-radius: 30px;
   position: fixed;
   display: flex;
-  background-color: #d9d9d9;
-  background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+  background-color: transparent;
+  /*background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);*/
 }
 
 .textcontentdiv{

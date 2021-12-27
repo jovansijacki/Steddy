@@ -13,9 +13,9 @@
     height: fit-content;}
     .textcontentdiv{ min-height: 100%; margin-top: 20%;
     }
-    .ytframe{height: 350px; margin-top: 20%; margin: auto;
+    .ytframe{margin-top: 20%; margin: auto;
     }
-    .imgcontentdiv {margin-top: 20%;}
+    .imgcontentdiv {margin-top: 20%;height: 20em;}
     .headerdiv img {
       height: 100%;
       width: 100px;
